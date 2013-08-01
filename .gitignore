@@ -2,3 +2,5 @@
 js/libs/*
 *.min.js
 _site/
+.vendor/
+.bundle/
