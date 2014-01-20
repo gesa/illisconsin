@@ -1,7 +1,6 @@
-source 'https://rubygems.org'
+source "http://rubygems.org"
 
-gem 'jekyll'
-gem 'jekyll-sass'
-
-gem 'jekyll-assets'
-gem 'uglifier'
+gem 'jekyll', '~>1.0'
+gem 'rdiscount'
+gem 'csscss', '~>1.3'
+gem 'sass', '>=3.2'

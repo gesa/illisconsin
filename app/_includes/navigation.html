@@ -1,0 +1,10 @@
+<nav role="navigation">
+  <ul>
+    {% for s in site.sections %}
+    {% assign section = s | downcase %}
+    <li{% if post.category == section or page.category == section %} class="active"{% endif %}>
+      <a href="/{{ section }}/">{{ s }}</a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

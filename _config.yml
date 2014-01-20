@@ -1,23 +1,53 @@
-## so, theoretically, if you set this file up right, you don't need to touch
-## global-meta until some new tag/convention comes out. for example, the new
-## twitter meta (which isn't there yet).
+# Base Jekyll configuration
 
-## setup
-markdown: rdiscount # choose markdown engine
-exclude: [.gitignore] # '_filename.ext' is also excluded
-permalink: /:categories/:year/:month/:day/:title/
-future: false         # don't publish blog posts for a future date
-lsi: true             # more thorough "related posts" analysis
+# Grunt handles some Jekyll configuration. If you set something here and
+# it doesn't work, check if it is set in the Gruntfile.
 
-## meta info
-title: ''     # this goes after each page name in title tags and such
-longTitle: '' # this can be used for fb & index page
-gplus: ''     # google plus ID, long numeric string, optional
-url: ''       # include http(s), no trailing slash
-imagePath: '' # relative to root, for social sites
+# Use _config.build.yml to override these settings on `grunt build`.
 
-## scripts
-modernizrBuild: '' # lives in /js/libs/, don't forget extension
-jqVersion: '1.9.1'
+name: getting-hitched
+description: holy crap we’re getting hitched
 
-ga: 'UA-' # google analytics site id
+author:
+  name: Aki and Mark
+  email: hi@akibraun.com
+  github: gesa
+  twitter: gesa
+
+sections: ['Wedding', 'Milwaukee', 'Gifts', 'Questions', 'RSVP']
+
+# Exclude directories and/or files from the conversion.
+# Grunt moves image files and asset directories.
+exclude: ['assets/img', 'assets/css', 'assets/js', 'assets/fonts',
+          '**.png', '**.jpg', '**.jpeg', '**.gif', '**.webp', '**.svg', '**.ico']
+
+# Force inclusion of directories and/or files in the conversion.
+# .htaccess is a good example since dotfiles are excluded by default.
+include: ['.htaccess']
+
+# Default post path style
+# date  /:categories/:year/:month/:day/:title.html
+# pretty  /:categories/:year/:month/:day/:title/
+# none  /:categories/:title.html
+permalink: pretty
+
+# Publish posts with future date.
+# _config.build.yml sets this to false on `grunt build`
+future: true
+
+# Compile posts in the _drafts directory.
+# _config.build.yml sets this to false on `grunt build`
+show_drafts: true
+
+# Split posts over multiple subdirectories called “page2”, “page3”, … “pageN”
+#paginate: 5
+#paginate_path: 'page:num'
+
+# Markdown library
+markdown: rdiscount
+# Markdown library options
+# rdiscount:
+  # extensions: []
+
+# Use Pygments to highlight code blocks
+pygments: false
