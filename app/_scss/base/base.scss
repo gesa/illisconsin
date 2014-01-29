@@ -1,17 +1,21 @@
 html, body {
   font: {
-    family: $body;
+    family: $bodyCopyFont;
     size: 100%;
-    weight: 300;
+    weight: $bodyNormalWeight;
   }
   line: {
     height: 1.5;
   }
 }
 
+b, strong {
+  font-weight: $bodyBoldWeight;
+}
 h1, h2, h3, h4, h5, h6 {
   font : {
     family: $headlines;
+    weight: $headlineWeight;
   }
 }
 

@@ -2,13 +2,27 @@
   background: $brown;
   text-align: center;
 
+  li {
+    &:first-child {
+      a {
+        padding-top: 1rem;
+
+      }
+    }
+    &:last-child {
+      a {
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
   a {
     display: block;
     font: {
-      family: $body;
       size: 1.25rem;
+      weight: $bodyBoldWeight;
     }
-    padding: 1rem 0;
+    padding: .8rem 0;
     text-decoration: none;
     &:link, &:visited {
       color: $white;

@@ -1,4 +1,3 @@
-@import url('//fonts.googleapis.com/css?family=Raleway:300,500');
 @import url('//fonts.googleapis.com/css?family=Lobster:400');
 
 
@@ -8,4 +7,26 @@ $pink: #b982ba;
 $grey: #CCCCCC;
 
 $headlines: Lobster, cursive;
-$body: Raleway, Verdana, "Lucida Grande", "Gill Sans", Arial, Helvetica, sans-serif;
+$headlineWeight: 400;
+
+$ralewayBody: Raleway, Verdana, "Lucida Grande", "Gill Sans", Arial, Helvetica, sans-serif;
+$ralewayNormalWeight: 300;
+$ralewayBoldWeight: 500;
+$ralewayURL : 'Raleway:#{$ralewayNormalWeight},#{$ralewayBoldWeight}';
+
+$josefinBody: 'Josefin Sans', Verdana, "Lucida Grande", "Gill Sans", Arial, Helvetica, sans-serif;
+$josefinNormalWeight: 300;
+$josefinBoldWeight: 600;
+$josefinURL : 'Josefin+Sans:#{$josefinNormalWeight},#{$josefinBoldWeight}';
+
+//$bodyCopyFont: $josefinBody;
+//$bodyNormalWeight: $josefinNormalWeight;
+//$bodyBoldWeight: $josefinBoldWeight;
+//$bodyCopyURL: $josefinURL;
+
+$bodyCopyFont: $ralewayBody;
+$bodyNormalWeight: $ralewayNormalWeight;
+$bodyBoldWeight: $ralewayBoldWeight;
+$bodyCopyURL: $ralewayURL;
+
+@import url('//fonts.googleapis.com/css?family=#{$bodyCopyURL}');
