@@ -21,7 +21,7 @@ module.exports = function (grunt) {
     },
     watch: {
       sass: {
-        files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}'],
+        files: ['<%= yeoman.app %>/_scss/**/*{.scss,.sass}'],
         tasks: ['sass:server', 'autoprefixer:server']
       },
       autoprefixer: {
@@ -114,7 +114,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>/_scss',
-          src: '**/*.{scss,sass}',
+          src: 'style.scss',
           dest: '.tmp/assets/css',
           ext: '.css'
         }]
@@ -127,7 +127,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: '<%= yeoman.app %>/_scss',
-          src: '**/*.{scss,sass}',
+          src: 'style.scss',
           dest: '.tmp/assets/css',
           ext: '.css'
         }]
@@ -366,8 +366,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('check', [
     'clean:server',
-    'jekyll:check',
     'sass:server',
+    'jekyll:check',
     'jshint:all',
     'csscss:check',
     'csslint:check'

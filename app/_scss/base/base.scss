@@ -1,0 +1,40 @@
+html, body {
+  font: {
+    family: $body;
+    size: 100%;
+    weight: 300;
+  }
+  line: {
+    height: 1.5;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font : {
+    family: $headlines;
+  }
+}
+
+h1 {
+  font-size: 3.1875rem;
+}
+
+h2 {
+  font-size: 2.1875rem;
+}
+
+h3 {
+  font-size: 1.6875rem;
+}
+
+h4 {
+  font-size: 1.4375rem;
+}
+
+h5 {
+  font-size: 1.3125rem;
+}
+
+h6 {
+  font-size: 1.25rem;
+}
