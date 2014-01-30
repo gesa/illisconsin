@@ -21,7 +21,7 @@ module.exports = function (grunt) {
     },
     watch: {
       sass: {
-        files: ['<%= yeoman.app %>/_scss/**/*{.scss,.sass}'],
+        files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}'],
         tasks: ['sass:server', 'autoprefixer:server']
       },
       autoprefixer: {
@@ -111,26 +111,18 @@ module.exports = function (grunt) {
         loadPath: 'app/_bower_components'
       },
       dist: {
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/_scss',
-          src: 'style.scss',
-          dest: '.tmp/assets/css',
-          ext: '.css'
-        }]
+        files: {
+          '.tmp/css/style.css': '<%= yeoman.app %>/_scss/style.scss'
+        }
       },
       server: {
         options: {
           debugInfo: true,
           lineNumbers: true
         },
-        files: [{
-          expand: true,
-          cwd: '<%= yeoman.app %>/_scss',
-          src: 'style.scss',
-          dest: '.tmp/assets/css',
-          ext: '.css'
-        }]
+        files: {
+          '.tmp/css/style.css': '<%= yeoman.app %>/_scss/style.scss'
+        }
       }
     },
     autoprefixer: {
@@ -366,8 +358,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('check', [
     'clean:server',
-    'sass:server',
     'jekyll:check',
+    'sass:server',
     'jshint:all',
     'csscss:check',
     'csslint:check'
@@ -385,7 +377,7 @@ module.exports = function (grunt) {
     'uglify',
     'imagemin',
     'svgmin',
-    'rev',
+//    'rev',
     'usemin',
     'htmlmin'
     ]);
