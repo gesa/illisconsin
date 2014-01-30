@@ -42,9 +42,15 @@
 
 {% include navigation.html %}
 
-{{ content }}
+<div id="content" class="{{ page.div_class }}">
+  {{ content }}
+</div>
 
 <footer id="main-footer">
+  <p>We would love to hear from you. Questions? Snark?
+    <a href="mailto:markandaki+wedding@gmail.com">Shoot us an email</a>.
+    <span class="emoji kissing_heart">Kisses!</span></p>
+
 </footer>
 
 <!-- build:js(app) /assets/js/scripts.js -->

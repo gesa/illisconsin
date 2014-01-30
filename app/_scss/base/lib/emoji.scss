@@ -1,0 +1,20 @@
+// TODO sprites?
+
+.emoji {
+  @extend %ir;
+  display: inline-block;
+  max: {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+  vertical-align: bottom;
+
+  &.kissing_heart {
+    background: {
+      image: url('/img/emoji/kissing_heart.png');
+      position: center center;
+      repeat: no-repeat;
+      size: 64px 64px;
+    }
+  }
+}
