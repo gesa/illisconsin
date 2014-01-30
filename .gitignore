@@ -1,6 +1,10 @@
 *.css
-js/libs/*
 *.min.js
-_site/
-.vendor/
+
+.jekyll/
 .bundle/
+.tmp/
+.vendor/
+
+dist/
+node_modules/
