@@ -2,6 +2,11 @@
 
 .emoji {
   @extend %ir;
+  background: {
+    position: center center;
+    repeat: no-repeat;
+    size: 64px 64px;
+  }
   display: inline-block;
   max: {
     height: 3.2rem;
@@ -11,10 +16,7 @@
 
   &.kissing_heart {
     background: {
-      image: url('/assets/img/emoji/kissing_heart.png');
-      position: center center;
-      repeat: no-repeat;
-      size: 64px 64px;
+      image: url('/img/emoji/kissing_heart.png');
     }
   }
 }
