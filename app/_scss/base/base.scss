@@ -35,7 +35,7 @@ h1, h2, h3, h4, h5, h6 {
     weight: $headlineWeight;
   }
   line-height: 1.2;
-  margin: 0.5em auto 1em;
+  margin: 0.5em auto;
 }
 
 h1 {
@@ -64,4 +64,24 @@ h6 {
 
 p {
   margin: 0.4rem 0 0.8rem;
+}
+
+dl {
+  margin-bottom: 2rem;
+}
+
+dt {
+  float: left;
+  font: {
+    weight: bold;
+  }
+  &::after {
+    content: ':\00a0';
+  }
+}
+
+dd {
+  p:not(:first-child) {
+    margin-left: 1.6rem;
+  }
 }
