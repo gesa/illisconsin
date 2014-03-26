@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: grid
 title:  'Coming to Milwaukee'
 div_class: 'milwaukee'
 ---

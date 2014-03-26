@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: grid
 title: What to do about gifts
 category: gifts
 ---

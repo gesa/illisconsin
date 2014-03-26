@@ -66,7 +66,7 @@ $hidef: 1600;
   $container: auto;
 
   @if $viewport >= $standard {
-    $container: ($viewport - 40) / $remBase * 1rem;
+    $container: ($viewport - 40) / $remSize * 1rem;
     $column: $container * .0625;
   }
 
@@ -93,6 +93,7 @@ $hidef: 1600;
 .container {
   clear: both;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 .row::after {
