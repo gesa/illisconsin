@@ -1,9 +1,16 @@
 #main-header {
+  background: {
+    image: url('/img/header_background.png');
+  }
   border: {
     bottom: 0.3rem solid $brown;
     top: 0.3rem solid $brown;
   }
   overflow: hidden;
+  @media screen and (min-width: $breakpointOne) {
+    border-width: 0.4rem;
+    padding-top: 1.2rem;
+  }
   h1, h1 a {
     height: 0;
     margin: 0;
@@ -17,21 +24,42 @@
     background: {
       repeat: no-repeat;
     }
-    display: block;
+    display: none;
     float: left;
     margin: 0.5rem;
     overflow: hidden;
   }
   .top {
     display: none;
+    @media screen and (min-width: $breakpointOne) {
+      display: block;
+      width: 62.4rem;
+    }
+    @media screen and (min-width: $breakpointTwo) {
+      width: 93.6rem;
+    }
+    @media screen and (min-width: $breakpointThree) {
+      width: 124.8rem;
+    }
     i {
       background-image: url("/img/header_top_sprite.jpg");
+      display: none;
       height: 14.4rem;
+      margin: 0 0.6rem;
       width: 14.4rem;
     }
   }
   .bottom {
     width: 31.4rem;
+    @media screen and (min-width: $breakpointOne) {
+      width: 62.8rem;
+    }
+    @media screen and (min-width: $breakpointTwo) {
+      width: 94.2rem;
+    }
+    @media screen and (min-width: $breakpointThree) {
+      width: 125.6rem;
+    }
     i {
       background: {
         size: 147px 738px;
@@ -50,39 +78,61 @@
   .aki {
     &.headphones {
       background-position: -5px -5px;
+      @media screen and (min-width: $breakpointTwo) {
+        display: block;
+      }
     }
     &.prudential {
       background-position: -5px -154px;
+      @media screen and (min-width: $breakpointThree) {
+        display: block;
+      }
     }
     &.vox {
       background-position: -5px -303px;
+      @media screen and (min-width: $breakpointOne) {
+        display: block;
+      }
     }
     &.farmhouse {
       background-position: -5px -452px;
+      @media screen and (min-width: $breakpointOne) {
+        display: block;
+      }
+    }
+    &.manga {
+      background-position: 0 -147px;
     }
   }
 
   .mark {
     &.hat {
       background-position: -5px -601px;
+      @media screen and (min-width: $breakpointThree) {
+        display: block;
+      }
     }
     &.silly {
       background-position: -5px -750px;
+      @media screen and (min-width: $breakpointTwo) {
+        display: block;
+      }
     }
     &.stylin {
       background-position: -5px -899px;
+      @media screen and (min-width: $breakpointOne) {
+        display: block;
+      }
     }
     &.robot {
       background-position: -5px -1048px;
+      @media screen and (min-width: $breakpointOne) {
+        display: block;
+      }
     }
-  }
-
-  .mark.anime {
-    background-position: 0 0;
-  }
-
-  .aki.anime {
-    background-position: 0 -147px;
+    &.manga {
+      background-position: 0 0;
+    }
   }
 
   .heart {
@@ -92,12 +142,26 @@
     &.brown {
       background-position: 0 -443px;
     }
+    @media screen and (min-width: $breakpointThree) {
+      display: block;
+    }
   }
   .skull {
     background-position: 0 -591px;
+    @media screen and (min-width: $breakpointTwo) {
+      display: block;
+    }
   }
 
-  i:not(.anime) {
-    display: none;
+  .manga {
+    display: block;
+  }
+  @media screen and (min-width: $breakpointOne) {
+    .skull + .heart.brown {
+      display: block;
+    }
+    .aki.manga + .heart.pink {
+      display: block;
+    }
   }
 }
