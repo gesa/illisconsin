@@ -3,3 +3,14 @@
     text-align: center;
   }
 }
+
+.headline {
+  font: {
+    family: $headlines;
+    size: larger;
+    weight: $headlineWeight;
+  }
+  small {
+    font-size: 50%;
+  }
+}

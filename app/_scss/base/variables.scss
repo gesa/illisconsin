@@ -11,16 +11,6 @@ $ralewayNormalWeight: 300;
 $ralewayBoldWeight: 500;
 $ralewayURL : 'Raleway:#{$ralewayNormalWeight},#{$ralewayBoldWeight}';
 
-$josefinBody: 'Josefin Sans', Verdana, "Lucida Grande", "Gill Sans", Arial, Helvetica, sans-serif;
-$josefinNormalWeight: 300;
-$josefinBoldWeight: 600;
-$josefinURL : 'Josefin+Sans:#{$josefinNormalWeight},#{$josefinBoldWeight}';
-
-//$bodyCopyFont: $josefinBody;
-//$bodyNormalWeight: $josefinNormalWeight;
-//$bodyBoldWeight: $josefinBoldWeight;
-//$bodyCopyURL: $josefinURL;
-
 $bodyCopyFont: $ralewayBody;
 $bodyNormalWeight: $ralewayNormalWeight;
 $bodyBoldWeight: $ralewayBoldWeight;
