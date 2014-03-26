@@ -2,20 +2,6 @@
   background: $brown;
   text-align: center;
 
-  li {
-    &:first-child {
-      a {
-        padding-top: 1.8rem;
-
-      }
-    }
-    &:last-child {
-      a {
-        padding-bottom: 1.8rem;
-      }
-    }
-  }
-
   a {
     display: block;
     font: {
@@ -30,5 +16,9 @@
     &:hover, &:active {
       color: lighten($pink, 10%);
     }
+
+
+//    float: left;
+//    width: 50%;
   }
 }
