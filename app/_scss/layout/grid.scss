@@ -33,11 +33,11 @@ $marginNames: offset-one, offset-two, offset-three, offset-four, offset-five, of
 // - $small is where the fluid grid begins
 // - $standard is where the grid transitions from fluid to rem
 $small: 600;
-$standard: 960;
-$large: 1200;
+$standard: 980;
+$large: 1248;
 $hidef: 1600;
 
-@mixin generateColumns($column, $gutter) {
+@mixin generateColumns($column: 6.38%, $gutter: 2.126666667) {
   $i: 2;
   @each $className in $columnNames {
     &.#{$className} {
@@ -47,7 +47,7 @@ $hidef: 1600;
   }
 }
 
-@mixin generateMargins($column, $gutter) {
+@mixin generateMargins($column: 6.38%, $gutter: 2.126666667) {
   $i: 1;
   @each $className in $marginNames {
     &.#{$className} {
@@ -60,33 +60,30 @@ $hidef: 1600;
   }
 }
 
-@mixin gridGenerator($viewport: $standard, $prefix: '') {
-
-  $column: (100 * .0625) * 1%;
-  $container: auto;
-
-  @if $viewport >= $standard {
-    $container: ($viewport - 40) / $remSize * 1rem;
-    $column: $container * .0625;
+@mixin scaleContainer($viewport: $standard, $prefix: '') {
+  $halfGutter: ($viewport * .020408163);
+  .#{$prefix}container {
+    max-width: #{($viewport - $halfGutter) / $remSize}rem;
   }
+}
 
+@mixin gridGenerator($prefix: '') {
+  $column: (100 * .0638) * 1%;
   $gutter: $column / 3;
-  $margin: $gutter / 2;
 
   .#{$prefix}container {
-    padding: 1rem $gutter / 2;
-    width: $container;
+    padding: 1rem ($gutter / 2);
+  }
 
-    .#{$prefix}columns {
-      float: left;
-      margin-left: $gutter;
-      width: $column;
-      &:first-child, &.first {
-        margin-left: 0;
-      }
-      @include generateColumns($column, $gutter);
-      @include generateMargins($column, $gutter);
+  .#{$prefix}columns {
+    float: left;
+    margin-left: $gutter;
+    width: $column;
+    &:first-child, &.first {
+      margin-left: 0;
     }
+    @include generateColumns();
+    @include generateMargins();
   }
 }
 
@@ -94,6 +91,7 @@ $hidef: 1600;
   clear: both;
   margin: 0 auto;
   padding: 1rem;
+  width: 100%
 }
 
 .row::after {
@@ -105,13 +103,13 @@ $hidef: 1600;
 }
 
 @media screen and (min-width: #{$small / 16}em) {
-  @include gridGenerator($small);
+  @include gridGenerator();
 }
 
 @media screen and (min-width: #{$standard / 16}em) {
-  @include gridGenerator($standard);
+  @include scaleContainer($standard);
 }
 
 @media screen and (min-width: #{$large / 16}em) {
-  @include gridGenerator($large);
+  @include scaleContainer($large);
 }
