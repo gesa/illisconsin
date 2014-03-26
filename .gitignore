@@ -7,4 +7,5 @@
 .vendor/
 
 dist/
+design_files/
 node_modules/
