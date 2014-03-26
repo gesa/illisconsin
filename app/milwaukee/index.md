@@ -1,6 +1,7 @@
 ---
 layout: default
-title:  'Milwaukee'
+title:  'Coming to Milwaukee'
+div_class: 'milwaukee'
 ---
 
 ## Coming to Milwaukee

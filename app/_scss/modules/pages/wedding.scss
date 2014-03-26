@@ -1,0 +1,21 @@
+.wedding {
+  dl {
+    margin-bottom: 2rem;
+  }
+
+  dt {
+    float: left;
+    font: {
+      weight: bold;
+    }
+    &::after {
+      content: ':\00a0';
+    }
+  }
+
+  dd {
+    p:not(:first-child) {
+      margin-left: 1.6rem;
+    }
+  }
+}
