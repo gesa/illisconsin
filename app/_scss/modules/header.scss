@@ -1,0 +1,103 @@
+#main-header {
+  border: {
+    bottom: 0.3rem solid $brown;
+    top: 0.3rem solid $brown;
+  }
+  overflow: hidden;
+  h1, h1 a {
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+  .top, .bottom {
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  i {
+    background: {
+      repeat: no-repeat;
+    }
+    display: block;
+    float: left;
+    margin: 0.5rem;
+    overflow: hidden;
+  }
+  .top {
+    display: none;
+    i {
+      background-image: url("/img/header_top_sprite.jpg");
+      height: 14.4rem;
+      width: 14.4rem;
+    }
+  }
+  .bottom {
+    width: 31.4rem;
+    i {
+      background: {
+        size: 147px 738px;
+      }
+      @media#{$standard-def} {
+        background-image: url("/img/header_bottom_sprite.png");
+      }
+      @media#{$retina} {
+        background-image: url("/img/header_bottom_sprite@2x.png");
+      }
+      height: 14.7rem;
+      width: 14.7rem;
+    }
+  }
+
+  .aki {
+    &.headphones {
+      background-position: -5px -5px;
+    }
+    &.prudential {
+      background-position: -5px -154px;
+    }
+    &.vox {
+      background-position: -5px -303px;
+    }
+    &.farmhouse {
+      background-position: -5px -452px;
+    }
+  }
+
+  .mark {
+    &.hat {
+      background-position: -5px -601px;
+    }
+    &.silly {
+      background-position: -5px -750px;
+    }
+    &.stylin {
+      background-position: -5px -899px;
+    }
+    &.robot {
+      background-position: -5px -1048px;
+    }
+  }
+
+  .mark.anime {
+    background-position: 0 0;
+  }
+
+  .aki.anime {
+    background-position: 0 -147px;
+  }
+
+  .heart {
+    &.pink {
+      background-position: 0 -295px;
+    }
+    &.brown {
+      background-position: 0 -443px;
+    }
+  }
+  .skull {
+    background-position: 0 -591px;
+  }
+
+  i:not(.anime) {
+    display: none;
+  }
+}

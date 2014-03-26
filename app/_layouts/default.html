@@ -5,21 +5,18 @@
 </head>
 <body>
 
-<header id="main-header">
-  <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-</header>
-
-{% include partials/navigation.html %}
+{% include partials/header.html %}
 
 <div id="content" class="{{ page.div_class }}">
   {{ content }}
 </div>
 
+{% include partials/navigation.html %}
+
 <footer id="main-footer">
   <p>We would love to hear from you. Questions? Snark?
     <a href="mailto:markandaki+wedding@gmail.com">Shoot us an email</a>.
     <span class="emoji kissing_heart">Kisses!</span></p>
-
 </footer>
 
 <!-- build:js(app) /assets/js/scripts.js -->
