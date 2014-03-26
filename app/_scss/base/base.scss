@@ -1,12 +1,17 @@
 html, body {
+  color: $brown;
   font: {
     family: $bodyCopyFont;
-    size: 112.5%;
+    size: 10px;
     weight: $bodyNormalWeight;
   }
   line: {
     height: 1.5;
   }
+}
+
+body {
+  font-size: 1.8rem;
 }
 
 a {
@@ -29,29 +34,30 @@ h1, h2, h3, h4, h5, h6 {
     family: $headlines;
     weight: $headlineWeight;
   }
-  margin: .5em auto 1em;
+  line-height: 1.2;
+  margin: 0.5em auto 1em;
 }
 
 h1 {
-  font-size: 2.45rem;
+  font-size: 4rem;
 }
 
 h2 {
-  font-size: 1.65rem;
+  font-size: 2.7rem;
 }
 
 h3 {
-  font-size: 1.25rem;
+  font-size: 2.3rem;
 }
 
 h4 {
-  font-size: 1.15rem;
+  font-size: 2.1rem;
 }
 
 h5 {
-  font-size: 1.05rem;
+  font-size: 1.9rem;
 }
 
 h6 {
-  font-size: 1rem;
+  font-size: 1.8rem;
 }

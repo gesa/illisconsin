@@ -3,8 +3,8 @@ $white: #f7f5f7;
 $pink: #b982ba;
 $grey: #CCCCCC;
 
-$headlines: Lobster, cursive;
-$headlineWeight: 400;
+$headlines: Futura, "Trebuchet MS", Arial, sans-serif;
+$headlineWeight: 500;
 
 $ralewayBody: Raleway, Verdana, "Lucida Grande", "Gill Sans", Arial, Helvetica, sans-serif;
 $ralewayNormalWeight: 300;
@@ -25,3 +25,6 @@ $bodyCopyFont: $ralewayBody;
 $bodyNormalWeight: $ralewayNormalWeight;
 $bodyBoldWeight: $ralewayBoldWeight;
 $bodyCopyURL: $ralewayURL;
+
+$standard-def : '(-webkit-max-device-pixel-ratio: 1.49), (max-resolution: 143.9dpi)';
+$retina : '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)';
