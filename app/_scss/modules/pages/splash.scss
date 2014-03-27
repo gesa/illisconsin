@@ -1,6 +1,6 @@
 .splash {
   border-bottom: 0.3rem solid $brown;
-  @media screen and ($breakpointOne) {
+  @media screen and (min-width: $breakpoint628) {
     border-bottom: 0.4rem solid $brown;
   }
   text-align: center;
