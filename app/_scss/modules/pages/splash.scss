@@ -1,0 +1,7 @@
+.splash {
+  border-bottom: 0.3rem solid $brown;
+  @media screen and ($breakpointOne) {
+    border-bottom: 0.4rem solid $brown;
+  }
+  text-align: center;
+}
