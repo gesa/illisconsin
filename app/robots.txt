@@ -1,0 +1,10 @@
+---
+layout: none
+---
+User-agent: *
+{% if site.production != true %}
+Disallow: *
+{% else %}
+Allow: *
+{% endif %}
+Sitemap: http://illisconsin.com/sitemap.xml

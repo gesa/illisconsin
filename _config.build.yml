@@ -9,3 +9,6 @@ future: false
 
 # Compile posts in the _drafts directory.
 show_drafts: false
+
+# Allows robots to access the site
+production: true
