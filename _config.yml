@@ -8,7 +8,7 @@
 name: getting-hitched
 description: holy crap we’re getting hitched
 
-sections: ['Wedding', 'Milwaukee', 'Gifts', 'Questions', 'RSVP']
+sections: ['Wedding', 'Milwaukee', 'Gifts', 'Questions', 'RSVP', 'Updates']
 
 # Exclude directories and/or files from the conversion.
 # Grunt moves image files and asset directories.

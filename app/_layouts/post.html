@@ -2,6 +2,13 @@
 layout: grid
 ---
 
-<div class="post">
 {{ content }}
-</div>
+
+<nav class="row columns ten offset-one posts">
+  {% if page.previous %}
+  <a href="{{ page.previous.url }}" class="previous-post">{{ page.previous.title }}</a>
+  {% endif  %}
+  {% if page.next %}
+  <a href="{{ page.next.url }}" class="next-post">{{ page.next.title }}</a>
+  {% endif  %}
+</nav>
