@@ -1,10 +1,5 @@
-// Generated on 2014-03-14 using generator-jekyllrb 0.4.0-alpha
+// Generated on 2013-10-15 using generator-jekyllrb 0.4.0
 'use strict';
-var LIVERELOAD_PORT = 35729;
-var lrSnippet = require('connect-livereload')({port: LIVERELOAD_PORT});
-var mountFolder = function (connect, dir) {
-  return connect.static(require('path').resolve(dir));
-};
 
 // Directory reference:
 //   css: css
@@ -14,19 +9,18 @@ var mountFolder = function (connect, dir) {
 //   fonts: fonts
 
 module.exports = function (grunt) {
-  // show elapsed time at the end
+  // Show elapsed time after tasks run
   require('time-grunt')(grunt);
-  // load all grunt tasks
+  // Load all Grunt tasks
   require('load-grunt-tasks')(grunt);
-
-  // Configurable paths
-  var yeomanConfig = {
-    app: 'app',
-    dist: 'dist'
-  };
+  grunt.loadNpmTasks('grunt-bower-install');
 
   grunt.initConfig({
-    yeoman: yeomanConfig,
+    // Configurable paths
+    yeoman: {
+      app: 'app',
+      dist: 'dist'
+    },
     watch: {
       sass: {
         files: ['<%= yeoman.app %>/_scss/**/*.{scss,sass}'],
@@ -46,58 +40,51 @@ module.exports = function (grunt) {
       },
       livereload: {
         options: {
-          livereload: LIVERELOAD_PORT
+          livereload: '<%= connect.options.livereload %>'
         },
         files: [
           '.jekyll/**/*.html',
           '.tmp/css/**/*.css',
           '{.tmp,<%= yeoman.app %>}/<%= js %>/**/*.js',
-          '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}'
+          '<%= yeoman.app %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
+          '<%= yeoman.app %>/*.{gif,jpg,jpeg,png,svg,webp}'
         ]
       }
     },
     connect: {
       options: {
-        port: 9000,
-        // Change hostname to '0.0.0.0' to access the server from outside
+        port: 9001,
+        livereload: 35728,
+        // change this to '0.0.0.0' to access the server from outside
         hostname: 'localhost'
       },
       livereload: {
         options: {
-          middleware: function (connect) {
-            return [
-              lrSnippet,
-              mountFolder(connect, '.tmp'),
-              mountFolder(connect, '.jekyll'),
-              mountFolder(connect, yeomanConfig.app)
-            ];
-          }
+          open: true,
+          base: [
+            '.tmp',
+            '.jekyll',
+            '<%= yeoman.app %>'
+          ]
         }
       },
       dist: {
         options: {
-          middleware: function (connect) {
-            return [
-              mountFolder(connect, yeomanConfig.dist)
-            ];
-          }
+          open: true,
+          base: [
+            '<%= yeoman.dist %>'
+          ]
         }
       },
       test: {
         options: {
-          middleware: function (connect) {
-            return [
-              mountFolder(connect, '.tmp'),
-              mountFolder(connect, 'test'),
-              mountFolder(connect, yeomanConfig.app)
-            ];
-          }
+          base: [
+            '.tmp',
+            '.jekyll',
+            'test',
+            '<%= yeoman.app %>'
+          ]
         }
-      }
-    },
-    open: {
-      server: {
-        path: 'http://localhost:<%= connect.options.port %>'
       }
     },
     clean: {
@@ -116,7 +103,10 @@ module.exports = function (grunt) {
           }
         ]
       },
-      server: ['.tmp', '.jekyll']
+      server: [
+        '.tmp',
+        '.jekyll'
+      ]
     },
     sass: {
       options: {
@@ -168,56 +158,30 @@ module.exports = function (grunt) {
     jekyll: {
       options: {
         bundleExec: true,
-        config: '_config.yml',
+        config: '_config.yml,_config.build.yml',
         src: '<%= yeoman.app %>'
       },
       dist: {
         options: {
-          dest: '<%= yeoman.dist %>',
-          config: '_config.yml,_config.build.yml'
+          dest: '<%= yeoman.dist %>'
+        }
+      },
+      deploy: {
+        options: {
+          config: '_config.yml,_config.build.yml,_config.deploy.yml',
+          dest: '<%= yeoman.dist %>'
         }
       },
       server: {
         options: {
+          config: '_config.yml',
           dest: '.jekyll'
         }
-      }
-    },
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc'
-      },
-      all: [
-        'Gruntfile.js',
-        '<%= yeoman.app %>/js/**/*.js',
-        'test/spec/**/*.js',
-        '!<%= yeoman.app %>/js/vendor/**/*',
-        '!<%= yeoman.app %>/_bower_components/**/*'
-      ]
-    },
-    csscss: {
-      options: {
-        bundleExec: true,
-        minMatch: 2,
-        ignoreSassMixins: false,
-        colorize: true,
-        shorthand: false,
-        verbose: true
       },
       check: {
-        src: ['<%= yeoman.app %>/css/**/*.css',
-          '<%= yeoman.app %>/_scss/**/*.scss']
-      }
-    },
-    csslint: {
-      options: {
-        csslintrc: '.csslintrc'
-      },
-      check: {
-        src: [
-          '<%= yeoman.app %>}/css/**/*.css',
-          '<%= yeoman.app %>}/_scss/**/*.scss'
-        ]
+        options: {
+          doctor: true
+        }
       }
     },
     // UseminPrepare will only scan a single page for usemin blocks. If you
@@ -275,31 +239,25 @@ module.exports = function (grunt) {
             dot: true,
             cwd: '<%= yeoman.app %>',
             src: [
-              // Jekyll processes and moves HTML and text files. Usemin processes
-              // and moves CSS and javascript inside of Usemin blocks.
+              // Jekyll processes and moves HTML and text files
+              // Usemin moves CSS and javascript inside of Usemin blocks
               // Copy moves asset files and directories
-              '*.{ico,png}',
-              '**/*',
-              // Follow the Jekyll pattern and exclude all files and folders
-              // prefixed with an underscore
-              '!**/_*/**',
-              '!**/_*'
-              // Explicitly add other files your site needs for distribution here
+              'img/**/*',
+              'fonts/**/*',
+              // Like Jekyll, exclude files & folders prefixed with an underscore
+              '!**/_*{,/**}',
+              // Explicitly add any files your site needs for distribution here
+              //'_bower_components/jquery/jquery.js',
+              'favicon.ico',
+              'touch-icon-*.*'
+              //'apple-touch*.png'
             ],
             dest: '<%= yeoman.dist %>'
           }
-//            Sample bower copy, don't forget stageAssets too.
-//          },
-//          {
-//            expand: true,
-//            cwd: '<%= yeoman.app %>/_bower_components/fontawesome',
-//            src: 'fonts/*',
-//            dest: '<%= yeoman.dist %>'
-//          }
         ]
       },
       // Copy CSS into .tmp directory for Autoprefixer processing
-      stageAssets: {
+      stageCss: {
         files: [
           {
             expand: true,
@@ -308,43 +266,82 @@ module.exports = function (grunt) {
             src: '**/*.css',
             dest: '.tmp/css'
           }
-//          },
-//          {
-//            nonull: true,
-//            expand: true,
-//            dot: true,
-//            cwd: '<%= yeoman.app %>/_bower_components/fontawesome',
-//            src: 'fonts/*',
-//            dest: '.tmp'
-//          }
+        ]
+      }
+    },
+    jshint: {
+      options: {
+        jshintrc: '.jshintrc'
+      },
+      all: [
+        'Gruntfile.js',
+        '<%= yeoman.app %>/js/**/*.js',
+        'test/spec/**/*.js',
+        '!<%= yeoman.app %>/js/vendor/**/*'
+      ]
+    },
+    csscss: {
+      options: {
+        bundleExec: true,
+        minMatch: 2,
+        ignoreSassMixins: false,
+        colorize: true,
+        shorthand: false,
+        verbose: true
+      },
+      check: {
+        src: [
+          '<%= yeoman.app %>/css/style.scs',
+          '<%= yeoman.app %>/_scss/style.sccs'
+        ]
+      }
+    },
+    csslint: {
+      options: {
+        csslintrc: '.csslintrc'
+      },
+      check: {
+        src: [
+          '<%= yeoman.app %>}/css/**/*.css',
+          '<%= yeoman.app %>}/_scss/**/*.scss'
         ]
       }
     },
     concurrent: {
       server: [
         'sass:server',
-        'copy:stageAssets',
+        'copy:stageCss',
         'jekyll:server'
       ],
       dist: [
         'sass:dist',
         'copy:dist'
       ]
+    },
+    bowerInstall: {
+      server: {
+        src: '.jekyll/**/*.html',
+        ignorePath: 'app'
+      },
+      dist: {
+        src: '<%= yeoman.dist %>/index.html',
+        ignorePath: 'app'
+      }
     }
   });
 
   // Define Tasks
   grunt.registerTask('server', function (target) {
     if (target === 'dist') {
-      return grunt.task.run(['build', 'open', 'connect:dist:keepalive']);
+      return grunt.task.run(['build', 'connect:dist:keepalive']);
     }
 
     grunt.task.run([
       'clean:server',
       'concurrent:server',
+      'bowerInstall:server',
       'autoprefixer:server',
       'connect:livereload',
-      'open',
       'watch'
     ]);
   });
@@ -358,8 +355,9 @@ module.exports = function (grunt) {
 
   grunt.registerTask('check', [
     'clean:server',
-    'sass:server',
-    'jshint:all',
+    'jekyll:check',
+    ' :server',
+//    'jshint:all',
     'csscss:check',
     'csslint:check'
   ]);
@@ -369,18 +367,29 @@ module.exports = function (grunt) {
     // Jekyll cleans files from the target directory, so must run first
     'jekyll:dist',
     'concurrent:dist',
+    'bowerInstall:dist',
+    'useminPrepare',
+    'concat',
+    'autoprefixer:dist',
+    'usemin'
+  ]);
+
+  grunt.registerTask('production', [
+    'clean:dist',
+    'jekyll:deploy',
+    'concurrent:dist',
+    'bowerInstall:dist',
     'useminPrepare',
     'concat',
     'autoprefixer:dist',
     'cssmin',
     'uglify',
-    'usemin',
-    'htmlmin'
+    'usemin'
   ]);
 
   grunt.registerTask('default', [
     'check',
     'test',
-    'build'
+    'tinker'
   ]);
 };
