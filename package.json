@@ -1,13 +1,12 @@
 {
-  "name": "akibraun.com",
+  "name": "ILlisconsin",
   "version": "0.0.1",
-  "description": "Yeoman / Grunt workflow for akibraun.com",
+  "description": "Wedding website for ILlisconsin.com",
   "repository": {
     "type": "git",
-    "url": "http://github.com/akibraun/akibraun.com"
+    "url": "http://github.com/gesa/getting-hitched"
   },
   "dependencies": {
-    "grunt-bower": "~0.8.4"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

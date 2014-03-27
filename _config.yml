@@ -8,12 +8,6 @@
 name: getting-hitched
 description: holy crap we’re getting hitched
 
-author:
-  name: Aki and Mark
-  email: hi@akibraun.com
-  github: gesa
-  twitter: gesa
-
 sections: ['Wedding', 'Milwaukee', 'Gifts', 'Questions', 'RSVP']
 
 # Exclude directories and/or files from the conversion.

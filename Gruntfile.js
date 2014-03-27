@@ -166,12 +166,6 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>'
         }
       },
-      deploy: {
-        options: {
-          config: '_config.yml,_config.build.yml,_config.deploy.yml',
-          dest: '<%= yeoman.dist %>'
-        }
-      },
       server: {
         options: {
           config: '_config.yml',
@@ -269,17 +263,6 @@ module.exports = function (grunt) {
         ]
       }
     },
-    jshint: {
-      options: {
-        jshintrc: '.jshintrc'
-      },
-      all: [
-        'Gruntfile.js',
-        '<%= yeoman.app %>/js/**/*.js',
-        'test/spec/**/*.js',
-        '!<%= yeoman.app %>/js/vendor/**/*'
-      ]
-    },
     csscss: {
       options: {
         bundleExec: true,
@@ -357,7 +340,6 @@ module.exports = function (grunt) {
     'clean:server',
     'jekyll:check',
     ' :server',
-//    'jshint:all',
     'csscss:check',
     'csslint:check'
   ]);
@@ -371,18 +353,6 @@ module.exports = function (grunt) {
     'useminPrepare',
     'concat',
     'autoprefixer:dist',
-    'usemin'
-  ]);
-
-  grunt.registerTask('production', [
-    'clean:dist',
-    'jekyll:deploy',
-    'concurrent:dist',
-    'bowerInstall:dist',
-    'useminPrepare',
-    'concat',
-    'autoprefixer:dist',
-    'cssmin',
     'uglify',
     'usemin'
   ]);
