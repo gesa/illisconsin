@@ -1,0 +1,53 @@
+#primary-nav {
+  background: $brown;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+
+  a {
+    display: block;
+    font: {
+      size: 1.6rem;
+      variant: small-caps;
+      weight: $bodyBoldWeight;
+    }
+    padding: 1.5rem 0;
+    text: {
+      decoration: none;
+      transform: uppercase;
+    }
+    &:link, &:visited {
+      color: $white;
+    }
+    &:hover, &:active {
+      color: lighten($pink, 10%);
+    }
+  }
+  li {
+    @media screen and (min-width: $breakpoint520) {
+      float: left;
+      border: dotted 0.1rem lighten($brown, 10%);
+      width: 50%;
+    }
+  }
+}
+
+
+.posts {
+
+}
+
+.previous-post {
+  float: left;
+  &::before {
+    @include icon($fa-chevron-circle-left);
+    margin-right: 0.5rem;
+  }
+}
+.next-post {
+  float: right;
+  &::after {
+    @include icon($fa-chevron-circle-right);
+    margin-left: 0.5rem;
+  }
+}
