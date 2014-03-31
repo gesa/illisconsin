@@ -1,4 +1,8 @@
 #content {
   background: $grey;
   overflow: hidden;
+  @media screen and (min-width: $breakpoint942) {
+    border-bottom: 0.4rem solid $brown;
+    padding-top: 5.3rem;
+  }
 }

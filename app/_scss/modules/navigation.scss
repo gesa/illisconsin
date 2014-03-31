@@ -4,6 +4,13 @@
   position: relative;
   text-align: center;
 
+  @media screen and (min-width: $breakpoint942) {
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 32rem;
+  }
+
   a {
     display: block;
     font: {
@@ -25,13 +32,16 @@
   }
   li {
     @media screen and (min-width: $breakpoint520) {
-      float: left;
       border: dotted 0.1rem lighten($brown, 10%);
+      float: left;
       width: 50%;
+    }
+    @media screen and (min-width: $breakpoint942) {
+      border: none;
+      width: 16.5%;
     }
   }
 }
-
 
 .posts {
 
