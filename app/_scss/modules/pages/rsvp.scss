@@ -1,0 +1,90 @@
+#google-frame {
+  display: none;
+}
+
+#google-form {
+  @media screen and (min-width: $breakpoint700) {
+    margin: 0 auto;
+    width: 68rem;
+  }
+  label {
+    display: block;
+    font-weight: bold;
+    margin-left: 0.3rem;
+  }
+  p {
+    margin: 0 0 0 0.3rem;
+  }
+
+  input, textarea {
+    font-size: 1.8rem;
+    max-width: 100%;
+    width: 30rem;
+  }
+
+  fieldset {
+    margin: 0 auto;
+    max-width: 30rem;
+    @media screen and (min-width: $breakpoint700) {
+      float: left;
+      margin: 0 2rem;
+    }
+  }
+}
+
+.fieldgroup {
+  margin: 0.8rem auto 1.6rem;
+  position: relative;
+}
+
+.required {
+  &::before {
+    color: $pink;
+    content: '*';
+    float: left;
+    font: {
+      size: 2rem;
+      weight: bold;
+    }
+    left: -0.5rem;
+    position: absolute;
+  }
+}
+
+input[type="submit"] {
+  background: $brown;
+  border: solid 0 lighten($brown, 20%) {
+    radius: 1rem;
+    bottom-width: 0.3rem;
+  }
+  color: #fff;
+  display: block;
+  font-family: $headlines;
+  margin: 0 auto;
+  padding: 0.7rem 10rem;
+  position: relative;
+  text-transform: uppercase;
+  transition: top 100ms, color 300ms, background 300ms;
+  width: 30rem;
+  &:hover {
+    color: $pink;
+    background: lighten($brown, 10%);
+  }
+  &:active, :focus {
+    border: {
+      bottom-width: 0;
+      top: transparent 0.3rem solid;
+    }
+    outline: 0;
+    top: 0.3rem;
+  }
+  @media screen and (min-width: $breakpoint700) {
+    clear: both;
+  }
+}
+
+#basic-info + hr {
+  @media screen and (min-width: $breakpoint700) {
+    display: none;
+  }
+}
