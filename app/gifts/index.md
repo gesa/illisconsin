@@ -4,7 +4,7 @@ title: What to do about gifts
 category: gifts
 ---
 
-## Gifts
+# Gifts
 
 _Gifts are absolutely not required nor expected!_
 

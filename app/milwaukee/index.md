@@ -1,10 +1,10 @@
 ---
 layout: grid
 title:  'Coming to Milwaukee'
-div_class: 'milwaukee'
+name: 'milwaukee'
 ---
 
-## Coming to Milwaukee
+# Coming to Milwaukee
 
 Are you traveling to Milwaukee for little ol’ us? Awesome! We’re really flattered and wanted to see if we could gives some tips to make the trip as easy as possible.
 
