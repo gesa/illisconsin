@@ -1,14 +1,22 @@
 #primary-nav {
   background: $brown;
+  left: 0;
   overflow: hidden;
-  position: relative;
+  right: 0;
   text-align: center;
-
   @media screen and (min-width: $breakpoint942) {
-    left: 0;
     position: absolute;
-    right: 0;
     top: 32rem;
+  }
+
+  ul {
+    @media screen and (min-width: 61.25em) {
+      margin: 0 auto;
+      max-width: 96.0rem;
+    }
+    @media screen and (min-width: 78em) {
+      max-width: 122.25306rem;
+    }
   }
 
   a {
@@ -32,13 +40,30 @@
   }
   li {
     @media screen and (min-width: $breakpoint520) {
-      border: dotted 0.1rem lighten($brown, 10%);
       float: left;
       width: 50%;
+      &:nth-child(odd) {
+        border-right: dotted 0.1rem lighten($brown, 10%);
+      }
+      &:nth-child(1n+3) {
+        border-top: dotted 0.1rem lighten($brown, 10%);
+      }
+    }
+    @media screen and (min-width: $breakpoint700) {
+      border-right: dotted 0.1rem lighten($brown, 10%);
+      width: 33.33333%;
+      &:nth-child(3n) {
+        border-right: none;
+      }
+      &:nth-child(0n + 3) {
+        border-top: none;
+      }
     }
     @media screen and (min-width: $breakpoint942) {
-      border: none;
       width: 16.5%;
+      &:nth-child(1n) {
+        border: none;
+      }
     }
   }
 }

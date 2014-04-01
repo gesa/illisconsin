@@ -59,7 +59,7 @@ input[type="submit"] {
   }
   color: #fff;
   display: block;
-  font-family: $headlines;
+  font-family: $headlineStack;
   margin: 0 auto;
   padding: 0.7rem 10rem;
   position: relative;
@@ -68,7 +68,7 @@ input[type="submit"] {
   width: 30rem;
   &:hover {
     color: $pink;
-    background: lighten($brown, 10%);
+    background: lighten($brown, 2%);
   }
   &:active, :focus {
     border: {

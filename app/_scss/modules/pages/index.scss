@@ -1,11 +1,12 @@
 .index {
+  text-align: center;
 }
 
 .headline {
   font: {
-    family: $headlines;
+    family: $headlineStack;
     size: larger;
-    weight: $headlineWeight;
+    weight: $headlineBoldWeight;
   }
   small {
     font-size: 50%;

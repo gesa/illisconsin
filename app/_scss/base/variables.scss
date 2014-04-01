@@ -4,18 +4,23 @@ $pink: #b982ba;
 $grey: #CCC;
 $black: #333;
 
-$headlines: Futura, "Trebuchet MS", Arial, sans-serif;
-$headlineWeight: 500;
-
-$ralewayBody: Raleway, Verdana, "Lucida Grande", "Gill Sans", Arial, Helvetica, sans-serif;
+$ralewayStack: Raleway, Verdana, "Lucida Grande", "Gill Sans", Arial, Helvetica, sans-serif;
 $ralewayNormalWeight: 300;
 $ralewayBoldWeight: 500;
 $ralewayURL : 'Raleway:#{$ralewayNormalWeight},#{$ralewayBoldWeight}';
 
-$bodyCopyFont: $ralewayBody;
-$bodyNormalWeight: $ralewayNormalWeight;
-$bodyBoldWeight: $ralewayBoldWeight;
-$bodyCopyURL: $ralewayURL;
+$futuraStack: Futura, "Trebuchet MS", Arial, sans-serif;
+$futuraNormalWeight: 300;
+$futuraBoldWeight: 500;
+
+$headlineStack: $ralewayStack;
+$headlineNormalWeight: $ralewayNormalWeight;
+$headlineBoldWeight: $ralewayBoldWeight;
+$headlineURL: $ralewayURL;
+
+$bodyCopyFont: $futuraStack;
+$bodyNormalWeight: $futuraNormalWeight;
+$bodyBoldWeight: $futuraBoldWeight;
 
 $standard-def : '(-webkit-max-device-pixel-ratio: 1.49), (max-resolution: 143.9dpi)';
 $retina : '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)';

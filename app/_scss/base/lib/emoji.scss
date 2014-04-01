@@ -12,7 +12,9 @@
     height: 3.2rem;
     width: 3.2rem;
   }
-  vertical-align: bottom;
+  position: relative;
+  top: -0.5rem;
+  vertical-align: middle;
 
   &.kissing_heart {
     background: {

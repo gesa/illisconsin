@@ -22,10 +22,6 @@ body {
   background: {
     image: url('/img/header_background.png');
   }
-  border-bottom: 0.3rem solid $brown;
-  @media screen and (min-width: $breakpoint628) {
-    border-bottom: 0.4rem solid $brown;
-  }
   font-size: 1.8rem;
   min-height: 100%;
 }
@@ -34,11 +30,12 @@ a {
   color: $brown;
   font-weight: $bodyBoldWeight;
   text-decoration: none;
+  transition: color 400ms;
 
   &:link, &:visited {
   }
   &:hover, &:active {
-    color: $pink;
+    color: darken($pink, 25%);
   }
 }
 
@@ -47,8 +44,8 @@ b, strong {
 }
 h1, h2, h3, h4, h5, h6 {
   font : {
-    family: $headlines;
-    weight: $headlineWeight;
+    family: $headlineStack;
+    weight: $headlineBoldWeight;
   }
   line-height: 1.2;
   margin: 0.25em auto 0.5em;
