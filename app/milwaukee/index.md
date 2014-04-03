@@ -25,7 +25,7 @@ Amtrak runs from Chicago’s Union Station to Milwaukee for around $22 and has s
 
 ### Automobiles
 
-Milwaukee is far less congested than Chicago and parking is rarely hard. (Except near the wedding venue. Sorry. The <a href="illisconsin.com/wedding">Wedding Page<a/> has more details on that.) That said, cabs CANNOT be hailed on the street and must be called. If you’re drinking, here’s a couple handy numbers to store in your cellphone:
+Milwaukee is far less congested than Chicago and parking is rarely hard. (Except near the wedding venue. Sorry. The <a href="/wedding/">Wedding Page</a> has more details on that.) That said, cabs CANNOT be hailed on the street and must be called. If you’re drinking, here’s a couple handy numbers to store in your cellphone:
 American United Taxi: 414-220-5000
 Yellow Cab Co-Op: 414-271-1800
 
