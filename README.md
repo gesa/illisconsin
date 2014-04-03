@@ -4,8 +4,8 @@
 
 ```zsh
 bundle install
-bower install
 npm install
+bower install
 ```
 
 ## To run
