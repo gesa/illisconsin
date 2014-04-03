@@ -74,25 +74,25 @@
 
   .aki {
     &.headphones {
-      background-position: -5px -5px;
+      background-position: -10px -164px;
       @media screen and (min-width: $breakpoint942) {
         display: block;
       }
     }
     &.prudential {
-      background-position: -5px -154px;
-      @media screen and (min-width: $breakpoint1256) {
-        display: block;
-      }
-    }
-    &.vox {
-      background-position: -5px -303px;
+      background-position: -10px -318px;
       @media screen and (min-width: $breakpoint628) {
         display: block;
       }
     }
+    &.vox {
+      background-position: -10px -472px;
+      @media screen and (min-width: $breakpoint1256) {
+        display: block;
+      }
+    }
     &.farmhouse {
-      background-position: -5px -452px;
+      background-position: -10px -626px;
       @media screen and (min-width: $breakpoint628) {
         display: block;
       }
@@ -104,25 +104,25 @@
 
   .mark {
     &.hat {
-      background-position: -5px -601px;
-      @media screen and (min-width: $breakpoint1256) {
-        display: block;
-      }
-    }
-    &.silly {
-      background-position: -5px -750px;
-      @media screen and (min-width: $breakpoint942) {
-        display: block;
-      }
-    }
-    &.stylin {
-      background-position: -5px -899px;
+      background-position: -10px -10px;
       @media screen and (min-width: $breakpoint628) {
         display: block;
       }
     }
+    &.silly {
+      background-position: -10px -934px;
+      @media screen and (min-width: $breakpoint942) {
+        display: block;
+      }
+    }
+    &.hat-alt {
+      background-position: -10px -780px;
+      @media screen and (min-width: $breakpoint1256) {
+        display: block;
+      }
+    }
     &.robot {
-      background-position: -5px -1048px;
+      background-position: -10px -1088px;
       @media screen and (min-width: $breakpoint628) {
         display: block;
       }
