@@ -1,11 +1,19 @@
 ---
 layout: grid
+name: updates
 ---
+<div class="row columns eight offset-two posts">
 
-{{ content }}
+  <h2>
+    {{ page.title }}
+    <a href="{{ page.url }}" class="archive-date">{{ page.date | date:"%B %d" }}</a>
+  </h2>
 
-<nav class="row columns ten offset-one posts">
-  {% if page.previous %}
+  {{ content }}
+
+</div>
+<nav class="row columns eight offset-two posts">
+{% if page.previous %}
   <a href="{{ page.previous.url }}" class="previous-post">{{ page.previous.title }}</a>
   {% endif  %}
   {% if page.next %}

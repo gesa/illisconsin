@@ -3,11 +3,17 @@ layout: grid
 name: updates
 title: Updates regarding the Illest Sconnie Wedding
 ---
-
-<ol>
+{{ page.category }}
+<ol class="posts">
   {% for post in site.categories.[page.name] %}
-  <li>
-    <a href="{{ post.url }}"><span class="archive-date">{{ post.date | date:"%B %d" }}</span>: {{ post.title }}</a>
+  <li class="row">
+    <div class="columns eight offset-two">
+      <h2>
+        {{ post.title }}
+        <a href="{{ post.url }}" class="archive-date">{{ post.date | date:"%B %d" }}</a>
+      </h2>
+      {{ post.content }}
+    </div>
   </li>
   {% endfor %}
 </ol>
