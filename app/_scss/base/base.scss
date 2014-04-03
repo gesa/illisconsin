@@ -29,7 +29,6 @@ body {
 a {
   color: $brown;
   font-weight: $bodyBoldWeight;
-  text-decoration: none;
   transition: color 400ms;
 
   &:link, &:visited {
