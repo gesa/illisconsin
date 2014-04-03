@@ -7,6 +7,6 @@ published: true
 
 # Gifts
 
-Since we'll be moving across the country soon, a traditional registry full of things to pack and move is a little daunting. Instead, we've put together a list of some of the things that will help us set up our new home and quirky lives in California. You can head over to our <a href="simpleregistry.com/markandaki">Simple Registry</a> to see the things that you can help with to send us on our way.
+Since we'll be moving across the country soon, a traditional registry full of things to pack and move is a little daunting. Instead, we've put together a list of some of the things that will help us set up our new home and quirky lives in California. You can head over to our <a href="http://simpleregistry.com/markandaki">Simple Registry</a> to see the things that you can help with to send us on our way.
 
 Most importantly, we'd be thrilled to see you in Milwaukee to celebrate!
