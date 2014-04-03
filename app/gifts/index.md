@@ -2,13 +2,11 @@
 layout: grid
 title: What to do about gifts
 category: gifts
+published: true
 ---
 
 # Gifts
 
-_Gifts are absolutely not required nor expected!_
+Since we'll be moving across the country soon, a traditional registry full of things to pack and move is a little daunting. Instead, we've put together a list of some of the things that will help us set up our new home and quirky lives in California. You can head over to our <a href="simpleregistry.com/markandaki">Simple Registry</a> to see the things that you can help with to send us on our way.
 
-If you’re feeling really generous and insist on a little something, then first off:
-Thanks! That’s really sweet! But after the wedding this summer, we’ll be packing up
-and heading west to warmer climates. That being so, instead of more items to manage,
-maybe you’d consider contributing to our new wedded home in another way?
+Most importantly, we'd be thrilled to see you in Milwaukee to celebrate!
