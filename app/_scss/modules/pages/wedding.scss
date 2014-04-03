@@ -4,7 +4,6 @@
   }
 
   dt {
-    float: left;
     font: {
       weight: bold;
     }
@@ -16,6 +15,28 @@
   dd {
     p:not(:first-child) {
       margin-left: 1.6rem;
+    }
+  }
+}
+
+.schedule {
+  dt {
+    float: left;
+  }
+}
+
+.getting-there {
+  dd {
+    margin-bottom: 1rem;
+    p {
+      margin-left: 1.6rem;
+    }
+  }
+  span.center {
+    display: block;
+    font: {
+      variant: small-caps;
+      weight: bold;
     }
   }
 }
