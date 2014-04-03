@@ -35,19 +35,19 @@ Yellow Cab Co-Op: 414-271-1800
 
 Because so many people will have different preferences, we haven’t had any rooms set aside. Milwaukee isn’t a big city and it’s pretty quick to get around. <strong>Please note, our wedding will be the same weekend as the Milwaukee Air and Water Show, so last minute booksin may be difficult.</strong> Also, some hotels have a three night minimum because of the show. Here’s a range of places around town that may fit your tastes, but anything Downtown, near the airport or east of the river on the East Side would be a good choice. 
 
-<strong>$</strong>Days Inn - Milwaukee Airport 
+<strong>$</strong><a href="http://www.daysinn.com/hotels/wisconsin/oak-creek/days-inn-oak-creek-milwaukee-airport/hotel-overview">Days Inn - Milwaukee Airport</a> 
 201 W College Ave Oak Creek, WI, 53221
 
-<strong>$</strong>Hampton Inn Milwaukee-Airport
+<strong>$</strong><a href="http://hamptoninn3.hilton.com/en/hotels/wisconsin/hampton-inn-milwaukee-airport-MKEAPHX/index.html">Hampton Inn Milwaukee-Airport</a>
 1200 W College Ave Milwaukee, WI, 53221
 
-<strong>$$</strong>Marriott Residence Inn
+<strong>$$</strong><a href="http://www.marriott.com/hotels/travel/mkeri-residence-inn-milwaukee-downtown/">Marriott Residence Inn</a>
 648 N Plankinton Ave Milwaukee, WI, 53203
 
-<strong>$$$</strong>The Pfister Hotel
+<strong>$$$</strong><a href="http://www.thepfisterhotel.com">The Pfister Hotel</a>
 424 E Wisconsin Ave Milwaukee, WI, 53202
 
-<strong>$$$</strong>Hotel Metro
+<strong>$$$</strong><a href="http://www.hotelmetro.com>Hotel Metro</a>
 411 E Mason St Milwaukee, WI, 53202
 
 ---
