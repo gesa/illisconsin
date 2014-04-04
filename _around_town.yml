@@ -1,0 +1,100 @@
+hotels:
+  - name: Days Inn—Milwaukee Airport
+    url: http://www.daysinn.com/hotels/wisconsin/oak-creek/days-inn-oak-creek-milwaukee-airport/hotel-overview
+    address: 201 W College Ave Oak Creek, WI, 53221
+    price: $
+  - name: Hampton Inn Milwaukee—Airport
+    url: http://hamptoninn3.hilton.com/en/hotels/wisconsin/hampton-inn-milwaukee-airport-MKEAPHX/index.html
+    address: 1200 W College Ave Milwaukee, WI, 53221
+    price: $
+  - name: Marriott Residence Inn
+    url: http://www.marriott.com/hotels/travel/mkeri-residence-inn-milwaukee-downtown/
+    address: 648 N Plankinton Ave Milwaukee, WI, 53203
+    price: $$
+  - name: The Pfister Hotel
+    url: http://www.thepfisterhotel.com
+    address: 424 E Wisconsin Ave Milwaukee, WI, 53202
+    price: $$$
+  - name: Hotel Metro
+    url: http://www.hotelmetro.com
+    address: 411 E Mason St Milwaukee, WI, 53202
+    price: $$$
+
+restaurants:
+  - name: Maharaja
+    address: 1550 N Farwell Ave, Milwaukee, WI 53202
+    url: http://www.maharajarestaurants.com/
+    price: $$
+    veg: true
+  - name: Beans & Barley
+    address: 1901 E North Ave, Milwaukee, WI 53202
+    url: http://www.beansandbarley.com/
+    price: $$
+    veg: true
+  - name: The Odd Duck
+    address: 2352 S Kinnickinnic Ave, Milwaukee, WI 53207
+    url: http://oddduckrestraurant.com/
+    price: $$$
+    veg: false
+  - name: Comet Cafe
+    address: 1947 N Farwell Ave, Milwaukee, WI 53202
+    url: http://thecometcafe.com/
+    price: $$
+    veg: true
+  - name: Cafe Lulu
+    address: 2265 S Howell Ave, Milwaukee, WI 53207
+    url: http://lulubayview.com/
+    price: $$
+    veg: false
+  - name: La Merenda
+    address: 125 E National Ave, Milwaukee, WI 53204
+    url: http://lamerenda125.com/
+    price: $$$
+    veg: false
+  - name: County Clare
+    address: 1234 N Astor St, Milwaukee, WI 53202
+    url: http://countyclare-inn.com/
+    price: $$
+    veg: true
+  - name: Hamburger Mary’s
+    address: 2130 S Kinnickinnic Ave, Milwaukee, WI 53207
+    url: http://hamburgermarys.com/mke/
+    price: $
+    veg: false
+  - name: AJ Bomber’s
+    address: 1247 N Water St, Milwaukee, WI 53202
+    url: http://ajbombers.com/
+    price: $$
+    veg: false
+  - name: EE Sane
+    address: 1806 N Farwell Ave, Milwaukee, WI 53202
+    price: $$
+    veg: true
+  - name: Cafe Corazon
+    address: 3129 N Bremen St, Milwaukee, WI 53212
+    url: http://corazonmilwaukee.com/
+    price: $$
+    veg: true
+
+bars:
+  - name: Tonic Tavern
+    url: http://tonictavern.com/
+    address: 2335 S Kinnickinnic Ave, Milwaukee, WI 53207
+  - name: Sugar Maple
+    url: http://mysugarmaple.com/
+    address: 441 E Lincoln Ave, Milwaukee, WI 53207
+  - name: Lee’s Luxury Lounge
+    address: 2988 S Kinnickinnic Ave, Milwaukee, WI 53207
+  - name: Y Not III
+    address: 1854 E Kenilworth Pl Milwaukee, WI
+  - name: Wolski’s
+    url: http://wolskis.com/
+    address: 1836 N Pulaski St Milwaukee, WI 53202
+  - name: Von Trier
+    url: http://vontriers.com/
+    address: 2235 N Farwell Ave, Milwaukee, WI 53202
+  - name: The Up and Under Pub
+    url: http://www.theupandunderpub.com/
+    address: 1216 E Brady St Milwaukee, WI 53202
+  - name: Toni's Moody Blues
+    address: 2813 S Howell Ave, Milwaukee, WI 53207

@@ -33,7 +33,7 @@ module.exports = function (grunt) {
       jekyll: {
         files: [
           '<%= yeoman.app %>/**/*.{html,yml,md,mkd,markdown}',
-          '_config.yml',
+          '_config.yml', '_around_town.yml',
           '!<%= yeoman.app %>/_bower_components'
         ],
         tasks: ['jekyll:server']
@@ -158,7 +158,7 @@ module.exports = function (grunt) {
     jekyll: {
       options: {
         bundleExec: true,
-        config: '_config.yml,_config.build.yml',
+        config: '_config.yml,_around_town.yml,_config.build.yml',
         src: '<%= yeoman.app %>'
       },
       dist: {
@@ -168,7 +168,7 @@ module.exports = function (grunt) {
       },
       server: {
         options: {
-          config: '_config.yml',
+          config: '_config.yml,_around_town.yml',
           dest: '.jekyll'
         }
       },
