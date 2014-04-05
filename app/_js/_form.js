@@ -10,10 +10,4 @@
 
   $form.on('submit', completeSubmission);
 
-
-  analytics.trackForm($form, 'RSVP', {
-    names: $('#input-adult-names').val(),
-    email: $('#input-email').val()
-  });
-
 })(jQuery, document, window);
