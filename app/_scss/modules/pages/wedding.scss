@@ -4,9 +4,6 @@
   }
 
   dt {
-    font: {
-      weight: bold;
-    }
     &::after {
       content: ':\00a0';
     }
@@ -27,7 +24,6 @@
 
 .getting-there {
   dd {
-    margin-bottom: 1rem;
     p {
       margin-left: 1.6rem;
     }
