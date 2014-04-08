@@ -10,15 +10,10 @@
 <div id="content" class="{{ page.name }}">
   {{ content }}
 </div>
-{% unless page.name == 'splash' %}
+
 {% include partials/navigation.html %}
 {% include partials/footer.html %}
-{% endunless %}
+{% include partials/scripts.html %}
 
-<!-- build:js(app) /js/scripts.js -->
-<script src="/_bower_components/jquery/dist/jquery.js"></script>
-<script src="/_js/_form.js"></script>
-<script src="/_js/main.js"></script>
-<!-- endbuild -->
 </body>
 </html>
