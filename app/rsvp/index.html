@@ -6,27 +6,23 @@ published: true
 <h1>RSVP</h1>
 <p>Thanks for responding to our invitation&mdash;we can&rsquo;t wait to see you in Milwaukee!</p>
 
-<p><strong>***NOTE***</strong> On 4/8 we realized there is a problem with the RSVP form. Apple users on Safari are NOT being recorded. Please use <a href="http://www.mozilla.org/en-US/firefox/new/">Firefox</a> or <a href="https://www.google.com/intl/en/chrome/browser/">Chrome</a> until this notice is removed. If you aren't sure if your response was recorded, feel free to put in a second one and we'll clear any doubles. Sorry and thanks!</p>
-
 <hr/>
-<iframe src="https://docs.google.com/forms/d/1JDRYfxd9Mk2egL2RJG6dQnxwFx4vsgzuqaA_Ir2KFBc/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0" name="google-frame" id="google-frame">
-  Loading...
-</iframe>
-<form action="https://docs.google.com/forms/d/1JDRYfxd9Mk2egL2RJG6dQnxwFx4vsgzuqaA_Ir2KFBc/formResponse" method="POST" id="google-form" target="google-frame">
-  <fieldset id="basic-info">
 
+<form id="google-form" name="form1" accept-charset="UTF-8" enctype="multipart/form-data" method="post" action="https://diveyes.wufoo.com/forms/z15y6k7u1q4hzm5/#public">
+  <fieldset id="basic-info">
     <ul>
       <li class="fieldgroup required">
         <label for="input-email">Email address</label>
-
         <p>Help us keep track of responses, and let you know if there are any (unlikely) changes of plan.</p>
-        <input type="email" name="entry.1075753728" id="input-email" aria-label="Email address Help us keep track of responses, and let you know if there are any (unlikely) changes of plan. Please make sure you leave us a valid email address!" aria-required="true" required="" title="Please make sure you leave us a valid email address!"/>
+
+        <input type="email" name="Field116" id="input-email" spellcheck="false" aria-label="Email address Help us keep track of responses, and let you know if there are any (unlikely) changes of plan. Please make sure you leave us a valid email address!" aria-required="true" required="" title="Please make sure you leave us a valid email address!"/>
       </li>
 
 
       <li class="fieldgroup required">
         <label for="input-adults"> Total number of adult guests</label>
-        <input type="number" name="entry.114480456" id="input-adults" aria-label="Total number of adult guests" aria-required="true" required="" title="(Please give us a number greater than zero!)"/>
+        <p> (including you!)</p>
+        <input type="number" name="Field111" id="input-adults" aria-label="Total number of adult guests" aria-required="true" required="" title="(Please give us a number greater than zero!)"/>
       </li>
 
 
@@ -34,13 +30,13 @@ published: true
         <label for="input-adult-names">Name(s) of adults</label>
 
         <p>Let us know who you are!</p>
-        <input name="entry.1897676136" id="input-adult-names" aria-label="Name(s) of adults&mdash;Let us know who you are!" aria-required="true" required=""/>
+        <input name="Field1" id="input-adult-names" aria-label="Name(s) of adults&mdash;Let us know who you are!" aria-required="true" required=""/>
       </li>
 
 
       <li class="fieldgroup">
         <label for="input-children">Number of children</label>
-        <input type="number" name="entry.1027121846" id="input-children" aria-label="Number of children"/>
+        <input type="number" name="Field124" id="input-children" aria-label="Number of children"/>
       </li>
 
 
@@ -48,13 +44,13 @@ published: true
         <label for="input-children-names">Name(s) of children</label>
 
         <p>Let us know who you are!</p>
-        <input name="entry.1241372825" value="" id="input-children-names" aria-label="Name(s) of children Let us know who you are!"/>
+        <input name="Field117" value="" id="input-children-names" aria-label="Name(s) of children Let us know who you are!"/>
       </li>
 
 
       <li class="fieldgroup">
         <label for="input-diet">Dietary Restrictions</label>
-        <input name="entry.1561904695" id="input-diet" aria-label="Dietary Restrictions"/>
+        <input name="Field121" id="input-diet" aria-label="Dietary Restrictions"/>
       </li>
     </ul>
   </fieldset>
@@ -67,18 +63,19 @@ published: true
         <label for="input-lodging-location">Hotel</label>
 
         <p>What hotel are you staying at?</p>
-        <textarea name="entry.1864119215" rows="8" cols="0" id="input-lodging-location" aria-label="Lodging info - Hotel We&rsquo;re curious as to where in the area people are staying, and for how long. It&rsquo;ll help us arrange any potential additional activities for travelers. This questions is totally optional. What hotel are you staying at? "></textarea>
+        <textarea name="Field122" rows="8" cols="0" id="input-lodging-location" aria-label="Lodging info - Hotel We&rsquo;re curious as to where in the area people are staying, and for how long. It&rsquo;ll help us arrange any potential additional activities for travelers. This questions is totally optional. What hotel are you staying at? "></textarea>
       </li>
 
       <li class="fieldgroup">
         <label for="input-lodging-dates">Dates</label>
 
         <p>What dates will you be in Milwaukee?</p>
-        <textarea name="entry.263248199" rows="8" cols="0" id="input-lodging-dates" aria-label="Lodging info - Dates What dates will you be in Milwaukee? "></textarea>
+        <textarea name="Field127" rows="8" cols="0" id="input-lodging-dates" aria-label="Lodging info - Dates What dates will you be in Milwaukee? "></textarea>
       </li>
     </ul>
   </fieldset>
 
-
-  <input type="submit" name="submit" value="Submit"/>
+    <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+    <input type="hidden" id="idstamp" name="idstamp" value="o0VpKsVW+AC/u/A3HKVYbZjgpNw7AqiZBQ6PGlu4ZSc=" />  
+  <input id="saveForm" name="saveForm" type="submit" value="Submit" />
 </form>
