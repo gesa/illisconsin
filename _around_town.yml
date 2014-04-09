@@ -11,6 +11,10 @@ hotels:
     url: http://www.marriott.com/hotels/travel/mkeri-residence-inn-milwaukee-downtown/
     address: 648 N Plankinton Ave Milwaukee, WI, 53203
     price: $$
+  - name: Aloft Milwaukee Downtown
+    url: http://www.aloftmilwaukeedowntown.com/
+    address: 1230 Old World Third Street Milwaukee, Wisconsin 53212
+    price: $$
   - name: The Pfister Hotel
     url: http://www.thepfisterhotel.com
     address: 424 E Wisconsin Ave Milwaukee, WI, 53202
