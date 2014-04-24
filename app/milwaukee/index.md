@@ -7,10 +7,18 @@ published: true
 
 # Coming to Milwaukee
 
+---
+-> [planes](#planes) | [trains](#trains) | [automobiles](#automobiles)  
+[sleep](#sleep) | [eat](#eat) | [drink](#drink) <-
+
+---
+
 Are you traveling to Milwaukee for little ol’ us? Awesome! We’re really flattered
 and wanted give some tips to make the trip as easy as possible.
 
 ---
+
+<a name="planes"></a>
 
 ### Planes
 
@@ -20,6 +28,8 @@ via interstate or surface streets. Flying in to Chicago is do-able with a car re
 but without is a big pain in the CTA-to-Amtrak-to-MCTS-butt.
 
 ---
+
+<a name="trains"></a>
 
 ### Trains/Public Transit
 
@@ -35,6 +45,8 @@ are a doable, if slightly pricey, option.
 
 ---
 
+<a name="automobiles"></a>
+
 ### Automobiles
 
 Milwaukee is far less congested than Chicago and parking is rarely hard. (Except
@@ -47,6 +59,8 @@ If you’re drinking, here’s a couple handy numbers to store in your cell phon
 - Yellow Cab Co-Op: 414-271-1800
 
 ---
+
+<a name="sleep"></a>
 
 ### Hotel, Motel, Holiday Inn
 
@@ -65,6 +79,8 @@ Side would be a good choice.
 
 ---
 
+ <a name="eat"></a>
+
 ### Food
 
 Milwaukee has a shocking number of great restaurants. They aren’t all listed here,
@@ -78,6 +94,8 @@ the ones with the big fat **V** will have a wider variety of choices.)
 {% endfor %}
 
 ---
+
+<a name="drink"></a>
 
 ### Drinks
 
