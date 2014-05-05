@@ -1,4 +1,8 @@
 hotels:
+  - name: Ambassador Hotel Milwaukee
+    url: http://www.ambassadormilwaukee.com/
+    address: 2308 W. Wisconsin Ave Milwaukee, Wi, 53233
+    price: $$$
   - name: Days Inn—Milwaukee Airport
     url: http://www.daysinn.com/hotels/wisconsin/oak-creek/days-inn-oak-creek-milwaukee-airport/hotel-overview
     address: 201 W College Ave Oak Creek, WI, 53221
