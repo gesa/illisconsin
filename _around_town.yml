@@ -1,8 +1,16 @@
 hotels:
-  - name: Ambassador Hotel Milwaukee
-    url: http://www.ambassadormilwaukee.com/
-    address: 2308 W. Wisconsin Ave Milwaukee, Wi, 53233
+  - name: The Knickerbocker on the Lake
+    url: http://www.knickerbockeronthelake.com/
+    address: 1028 East Juneau Ave Milwaukee, WI 53202
+    price: $$$$
+  - name: Doubletree by Hilton Milwaukee Downtown
+    url: http://doubletree3.hilton.com/en/hotels/wisconsin/doubletree-by-hilton-hotel-milwaukee-downtown-MKECCDT/index.html
+    address: 611 W. Wisconsin Ave Milwaukee, WI, 53203
     price: $$$
+  - name: Days Inn—Glendale/Milwaukee North
+    url: http://www.marriott.com/hotels/travel/mkeri-residence-inn-milwaukee-downtown/
+    address: 5485 N Port Washington Rd, Glendale, WI 53217
+    price: $
   - name: Days Inn—Milwaukee Airport
     url: http://www.daysinn.com/hotels/wisconsin/oak-creek/days-inn-oak-creek-milwaukee-airport/hotel-overview
     address: 201 W College Ave Oak Creek, WI, 53221
@@ -11,22 +19,6 @@ hotels:
     url: http://hamptoninn3.hilton.com/en/hotels/wisconsin/hampton-inn-milwaukee-airport-MKEAPHX/index.html
     address: 1200 W College Ave Milwaukee, WI, 53221
     price: $
-  - name: Marriott Residence Inn
-    url: http://www.marriott.com/hotels/travel/mkeri-residence-inn-milwaukee-downtown/
-    address: 648 N Plankinton Ave Milwaukee, WI, 53203
-    price: $$
-  - name: Aloft Milwaukee Downtown
-    url: http://www.aloftmilwaukeedowntown.com/
-    address: 1230 Old World Third Street Milwaukee, Wisconsin 53212
-    price: $$
-  - name: The Pfister Hotel
-    url: http://www.thepfisterhotel.com
-    address: 424 E Wisconsin Ave Milwaukee, WI, 53202
-    price: $$$
-  - name: Hotel Metro
-    url: http://www.hotelmetro.com
-    address: 411 E Mason St Milwaukee, WI, 53202
-    price: $$$
 
 restaurants:
   - name: Maharaja
