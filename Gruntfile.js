@@ -338,8 +338,8 @@ module.exports = function (grunt) {
 
   grunt.registerTask('check', [
     'clean:server',
-    'jekyll:check',
-    ' :server',
+    'sass:server',
+    'jshint:all',
     'csscss:check',
     'csslint:check'
   ]);
@@ -353,6 +353,7 @@ module.exports = function (grunt) {
     'useminPrepare',
     'concat',
     'autoprefixer:dist',
+    'cssmin',
     'uglify',
     'usemin'
   ]);
@@ -360,6 +361,6 @@ module.exports = function (grunt) {
   grunt.registerTask('default', [
     'check',
     'test',
-    'tinker'
+    'build'
   ]);
 };
