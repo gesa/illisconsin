@@ -2,6 +2,7 @@
 layout: post
 title: "Invites sent!"
 published: true
+categories: updates
 ---
 
 Today, we dropped a whole bunch of envelopes in the mail—later than we wanted to,

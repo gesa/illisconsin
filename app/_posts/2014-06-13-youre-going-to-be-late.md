@@ -2,6 +2,7 @@
 layout: post
 published: true
 title: "You’re Going to be Late. Don’t be Late."
+categories: updates
 ---
 
 So, there’s a [Summer Solstice festival](http://www.theeastside.org/categories/7-summer-soulstice/documents/12-the-summer-soulstice-music-festival)
