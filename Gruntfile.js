@@ -285,8 +285,8 @@ module.exports = function (grunt) {
       },
       check: {
         src: [
-          '<%= yeoman.app %>}/css/**/*.css',
-          '<%= yeoman.app %>}/_scss/**/*.scss'
+          '<%= yeoman.app %>/css/**/*.css',
+          '<%= yeoman.app %>/_scss/**/*.scss'
         ]
       }
     },
@@ -300,6 +300,17 @@ module.exports = function (grunt) {
         'sass:dist',
         'copy:dist'
       ]
+    },
+    premailer: {
+      options: {
+        baseUrl: 'http://illisconsin.com',
+        verbose: true
+      },
+      mailchimp: {
+        files: {
+          '<%= yeoman.dist %>/rsvp/email_template/index.html': ['<%= yeoman.dist %>/rsvp/email_template/index.html']
+        }
+      }
     },
     bowerInstall: {
       server: {
@@ -355,7 +366,8 @@ module.exports = function (grunt) {
     'autoprefixer:dist',
     'cssmin',
     'uglify',
-    'usemin'
+    'usemin',
+    'premailer:mailchimp'
   ]);
 
   grunt.registerTask('default', [
