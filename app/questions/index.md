@@ -41,8 +41,9 @@ published: true
 
 =What kind of food will be served?=
     A whole smattering of pizza and goodies from
-    [Classic Slice](http://theclassicslice.com), our favorite pizza joint. There
-    will be veggie pizza, vegan pizza, meat pizza, strange pizza, loud pizza and
+    [Ian's Pizza](http://ianspizza.com/) and
+    [Beans & Barley](http://beansandbarley.com/). There will be veggie pizza,
+    vegan pizza, meat pizza, gluten-free pizza, strange pizza, loud pizza and
     pizza with green eggs and ham.
 
 =What if I have a dietary restriction?=
