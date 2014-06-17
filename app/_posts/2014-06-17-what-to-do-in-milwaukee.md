@@ -25,8 +25,9 @@ in the lack of lodging, I might add) which is going on this weekend.
 annual [Summer Soulstice festival](www.theeastside.org/categories/7-summer-soulstice/documents/12-the-summer-soulstice-music-festival)
 on Saturday from 10am until midnight.
 
-Okay, now on to the letter.
+### Okay, now on to the letter:
 
+(There’s usually a personalised introduction paragraph here)
 
 If you’re looking for a place to stay, there is a very cool hotel just south of
 downtown called the [Iron Horse](http://www.theironhorsehotel.com/). The rooms
@@ -85,10 +86,6 @@ Those are basically across the street from
 and still allows smoking, if that’s your thing. I love the place and think it’s
 a trip. 
 
-If you realize at some point that you just want to relax and drink at a bar that
-the locals drink at, [hit me up on twitter](https://twitter.com/gesa). I can
-often be found at [Lee’s Luxury Lounge](http://www.avclub.com/milwaukee/venues/lees-luxury-lounge,36718/)
-on Friday & Saturday nights. 
 
 I hope this is helpful, if you have any Milwaukee-specific questions,
 let me know! As you may be able to tell… I love my city. Have a fun trip!
