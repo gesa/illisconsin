@@ -9,6 +9,12 @@ $ralewayNormalWeight: 300;
 $ralewayBoldWeight: 500;
 $ralewayURL : 'Raleway:#{$ralewayNormalWeight},#{$ralewayBoldWeight}';
 
+$openSansStack: 'Open Sans', Helvetica, Arial, sans-serif;
+$openSansNormalWeight: 300;
+$openSansBoldWeight: 400;
+$openSansURL : 'Open+Sans:#{$openSansNormalWeight},#{$openSansBoldWeight}';
+
+
 $futuraStack: Futura, "Trebuchet MS", Arial, sans-serif;
 $futuraNormalWeight: 300;
 $futuraBoldWeight: 500;
@@ -18,9 +24,9 @@ $headlineNormalWeight: $ralewayNormalWeight;
 $headlineBoldWeight: $ralewayBoldWeight;
 $headlineURL: $ralewayURL;
 
-$bodyCopyFont: $futuraStack;
-$bodyNormalWeight: $futuraNormalWeight;
-$bodyBoldWeight: $futuraBoldWeight;
+$bodyCopyFont: $openSansStack;
+$bodyNormalWeight: $openSansNormalWeight;
+$bodyBoldWeight: $openSansBoldWeight;
 
 $standard-def : '(-webkit-max-device-pixel-ratio: 1.49), (max-resolution: 143.9dpi)';
 $retina : '(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)';

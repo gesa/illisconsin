@@ -28,12 +28,17 @@ body {
 
 a {
   color: $brown;
+  display: inline-block;
   font-weight: $bodyBoldWeight;
-  transition: color 400ms;
+  transition: color 200ms, border-bottom-color, 200ms;
 
   &:link, &:visited {
+    border-bottom: dotted 0.1rem $brown;
+    border-bottom-color: $brown;
+    text-decoration: none;
   }
   &:hover, &:active {
+    border-bottom-color: $pink;
     color: darken($pink, 25%);
   }
 }
@@ -56,7 +61,7 @@ h1, h2, h3, h4, h5, h6 {
     weight: $headlineBoldWeight;
   }
   line-height: 1.2;
-  margin: 0.25em auto 0.5em;
+  margin: 0.5em auto 0.75em;
 }
 
 h1 {
@@ -84,9 +89,18 @@ h6 {
 }
 
 p {
-  margin: 0.4rem 0 0.8rem;
+  margin: 0.5em 0 1rem;
 }
 
 strong {
   font-weight: bolder;
+}
+
+ol, ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+li {
+  margin-bottom: 3rem;
 }

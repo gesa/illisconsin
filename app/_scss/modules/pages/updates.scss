@@ -3,8 +3,10 @@
 }
 
 .posts {
+  list-style: none;
   margin-top: 2rem;
-  li {
-    margin: 1rem auto 2rem;
-  }
+}
+
+.post {
+  margin: 1rem auto 5rem;
 }

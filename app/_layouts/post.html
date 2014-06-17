@@ -2,7 +2,7 @@
 layout: grid
 name: updates
 ---
-<div class="row columns eight offset-two posts">
+<article class="row columns eight offset-two posts post">
 
   <h2>
     {{ page.title }}
@@ -11,7 +11,7 @@ name: updates
 
   {{ content }}
 
-</div>
+</article>
 <nav class="row columns eight offset-two posts">
 {% if page.previous %}
   <a href="{{ page.previous.url }}" class="previous-post">{{ page.previous.title }}</a>

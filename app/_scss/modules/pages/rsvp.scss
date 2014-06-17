@@ -3,9 +3,12 @@
 }
 
 #google-form {
+  ul {
+    list-style: none;
+  }
   @media screen and (min-width: $breakpoint700) {
     margin: 0 auto;
-    width: 68rem;
+    width: 72rem;
   }
   label {
     display: block;

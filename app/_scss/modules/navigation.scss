@@ -39,6 +39,7 @@
     }
   }
   li {
+    margin-bottom: 0;
     @media screen and (min-width: $breakpoint520) {
       float: left;
       width: 50%;
