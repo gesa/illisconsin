@@ -1,11 +1,13 @@
 .index {
+  font-size: 2.1rem;
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 .headline {
   font: {
     family: $headlineStack;
-    size: larger;
+    size: 2.3rem;
     weight: $headlineBoldWeight;
   }
   small {
