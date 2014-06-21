@@ -22,7 +22,7 @@ all booked up.
 [Milwaukee Air & Water Show](http://www.milwaukeeairshow.com/) (a major culprit
 in the lack of lodging, I might add) which is going on this weekend.
 - As we mentioned in a previous blog post, The East Side is also celebrating its
-annual [Summer Soulstice festival](www.theeastside.org/categories/7-summer-soulstice/documents/12-the-summer-soulstice-music-festival)
+annual [Summer Soulstice festival](http://www.theeastside.org/categories/7-summer-soulstice/documents/12-the-summer-soulstice-music-festival)
 on Saturday from 10am until midnight.
 
 ### Okay, now on to the letter:

@@ -243,12 +243,7 @@ module.exports = function (grunt) {
               // Explicitly add any files your site needs for distribution here
               //'_bower_components/jquery/jquery.js',
               'favicon.ico',
-<<<<<<< HEAD
               'a/**/*'
-=======
-              'a/**/*',
-              'touch-icon-*.*'
->>>>>>> sneaks the map in
               //'apple-touch*.png'
             ],
             dest: '<%= yeoman.dist %>'
