@@ -11,3 +11,11 @@
   line-height: 1.7;
   margin: 1rem auto 5rem;
 }
+
+.mediacontainer {
+  margin: 0 auto;
+  max-width: 50rem;
+  iframe {
+    max-width: 100%;
+  }
+}

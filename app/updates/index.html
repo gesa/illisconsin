@@ -14,7 +14,7 @@ title: Updates regarding the Illest Sconnie Wedding
           {{ post.date | date:"%B %d" }}
         </a>
       </h2>
-      {{ post.content }}
+      {% if post.excerpt %}{{ post.excerpt }}{% else %}{{ post.content }}{% endif %}
     </article>
   </li>
   {% endfor %}

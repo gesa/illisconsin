@@ -28,3 +28,7 @@ at this email address:
 message content—including your email signature—will show up in the description
 of your photos)
 
+Please know that our default assumption for photos you share with us of the
+wedding is that they’ll be public. If you would prefer they stay private, that
+is absolutely okay too! Just make sure to let us know when you send them to us.
+(And don’t add them to flickr or wedpics.)
