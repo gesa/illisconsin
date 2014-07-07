@@ -10,7 +10,7 @@
 
 ## To install
 
-```zsh
+```bash
 git clone git@github.com:gesa/getting-hitched.git
 cd getting-hitched
 npm install
@@ -18,13 +18,13 @@ npm install
 
 ## To run
 
-```zsh
+```bash
 grunt server
 ```
 
 ## To deploy
 
-```zsh
+```bash
 grunt build
 ```
 
